@@ -13,10 +13,4 @@ function homeView(){
 }
 
 
-function addmessage(){
-    $ajout = new messages();
-    $res = $ajout->ajoutmessage();
 
-
- require('views/message.php');
-}

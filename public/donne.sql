@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3308
--- Généré le :  mer. 16 déc. 2020 à 03:46
+-- Généré le :  jeu. 17 déc. 2020 à 10:02
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.3.12
 
@@ -25,39 +25,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `identifient`
+-- Structure de la table `donne`
 --
 
-DROP TABLE IF EXISTS `identifient`;
-CREATE TABLE IF NOT EXISTS `identifient` (
+DROP TABLE IF EXISTS `donne`;
+CREATE TABLE IF NOT EXISTS `donne` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
-  `USER` varchar(20) NOT NULL,
-  `PASSWORD` varchar(20) NOT NULL,
-  `pseudo` varchar(255) NOT NULL,
+  `msg` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `identifient`
+-- Déchargement des données de la table `donne`
 --
 
-INSERT INTO `identifient` (`Id`, `USER`, `PASSWORD`, `pseudo`) VALUES
-(1, 'Elmi', '161289', '');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `messages`
---
-
-DROP TABLE IF EXISTS `messages`;
-CREATE TABLE IF NOT EXISTS `messages` (
-  `Id` int(11) NOT NULL AUTO_INCREMENT,
-  `message` varchar(255) NOT NULL,
-  `created_at` varchar(20) NOT NULL,
-  `users_id,` varchar(20) NOT NULL,
-  PRIMARY KEY (`Id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+INSERT INTO `donne` (`Id`, `msg`, `name`, `date`) VALUES
+(1, 'Bonjour', 'Elmi', '2020-12-16 05:10:06'),
+(2, 'SALUT ', 'Baptiste', '2020-12-16 05:15:00'),
+(3, 'Hello', 'Arnaud', '2020-12-16 11:58:06');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
