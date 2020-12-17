@@ -21,8 +21,8 @@
         <?php foreach($result as $re ) {  ?>
             <div id="chat_data">
            
-                 <td style="color:green;"><?php echo $re['name']; ?>  </td> 
-                 <span style="color:brown;"><?php echo $re['msg']; ?></span> 
+                 
+                 <span  style="float:right;"><?php echo $re['msg']; ?></span> 
                  <span style="float:right;"><?php echo $re['date']; ?></span> 
                 </div> 
 
@@ -32,10 +32,10 @@
        
         <form method="POST">
                 <div class="input-group">
-                <input type="text" class="form-control" name="message" id="texte" placeholder="Entrez votre texte">
-                    <input type="text" class="form-control" name="nom" id="text" placeholder="Entrez votre texte">
+                <input type="text" class="input-group-text"  name="message" id="texte" placeholder="Entrez votre texte">
+                  
                     <div class="input-group-append">
-                        <span class="input-group-text" id="valid">Envoyer</span>
+                        <span class="form-control" id="valid">Envoyer</span>
                     </div>
                    
                     
