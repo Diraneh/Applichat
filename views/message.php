@@ -24,15 +24,19 @@
                    
         </div>
        
-        <form method="POST" >
-            <input type="text" name="nom" id="texte" placeholder="Enter Name: " />
-            <input type="text" name="messages" id="texte" placeholder="Entre  votre message " />
-           
-            <button type="submit" classe="btn" id="valid" name="action"  value="ajouter">Envoyer</button>
-           
-
-        </form>
-        <div id="response"></div>
+        <form method="POST">
+                <div class="input-group">
+                <input type="text" class="form-control" name="message" id="texte" placeholder="Entrez votre texte">
+                    <input type="text" class="form-control" name="nom" id="text" placeholder="Entrez votre texte">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="valid">Envoyer</span>
+                    </div>
+                   
+                    
+                </div>
+                </form>
+                <div id="reponse"></div>
+            </div>
         <script type="text/javascript" src="script.js"></script>
        
     </div>
