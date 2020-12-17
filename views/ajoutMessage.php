@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $message = $_GET["message"];
     $nom = $_GET["nom"];
     //ON écrit la requête : on insère dans la colonne message de la table message la variable $message
-    $sql = 'INSERT INTO donne(Id, msg, name, date)  VALUES (":", :message,:nom,":")';
+    $sql = 'INSERT INTO donne(Id, msg, name)  VALUES (":", :message,:nom)';
     
     //On prépare la requête
     $add = $db->prepare($sql);

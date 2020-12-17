@@ -9,7 +9,12 @@
 </head>
 
 <body>
-   
+<div class="container">
+            <div class="row">
+            <div class="input-group-append">
+                <span class="input-group-text"><a href="Deconnexcion">Deconnection</a></span>
+            </div>  
+            </div>
     <div id="container">
         <div id="chat_box">
         <?php foreach($result as $re ) {  ?>
@@ -38,6 +43,7 @@
                 <div id="reponse"></div>
             </div>
         <script type="text/javascript" src="script.js"></script>
+        
        
     </div>
 </body>
