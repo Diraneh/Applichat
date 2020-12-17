@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,7 +13,7 @@
 <div class="container">
             <div class="row">
             <div class="input-group-append">
-                <span class="input-group-text"><a href="Deconnexcion">Deconnection</a></span>
+                <span class="input-group-text"><a href="deconnexion.php">Deconnection</a></span>
             </div>  
             </div>
     <div id="container">

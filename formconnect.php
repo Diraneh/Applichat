@@ -1,6 +1,8 @@
 
     <?php
 
+    session_start();
+    $_SESSION['User']="User";
 
 include("connection.php");
 
@@ -20,6 +22,7 @@ if ( isset($_GET['action']) && !empty($_GET['User'])  && !empty($_GET['Password'
   $row   = $Selection->fetch(PDO::FETCH_ASSOC);
   if($count == 1 && !empty($row)) {
     /******************** Your code ***********************/
+    
     header('location:index.php');
    
   } 
