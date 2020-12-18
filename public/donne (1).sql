@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3308
--- Généré le :  jeu. 17 déc. 2020 à 10:02
+-- Généré le :  ven. 18 déc. 2020 à 09:32
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.3.12
 
@@ -32,19 +32,21 @@ DROP TABLE IF EXISTS `donne`;
 CREATE TABLE IF NOT EXISTS `donne` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `msg` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `donne`
 --
 
-INSERT INTO `donne` (`Id`, `msg`, `name`, `date`) VALUES
-(1, 'Bonjour', 'Elmi', '2020-12-16 05:10:06'),
-(2, 'SALUT ', 'Baptiste', '2020-12-16 05:15:00'),
-(3, 'Hello', 'Arnaud', '2020-12-16 11:58:06');
+INSERT INTO `donne` (`Id`, `msg`, `date`) VALUES
+(29, 'heloo', '2020-12-17 15:44:40'),
+(28, 'salut', '2020-12-17 15:28:28'),
+(54, 'reez', '2020-12-18 10:29:59'),
+(53, 'ghjhd', '2020-12-18 10:28:29'),
+(52, 'tre', '2020-12-18 10:27:39'),
+(51, 'henry', '2020-12-18 10:26:48');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
