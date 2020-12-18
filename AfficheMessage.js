@@ -3,7 +3,7 @@ function AfficheMessage(){
     const requeteAjax = new XMLHttpRequest();
     
       
-    requeteAjax.open("GET", "model.php");
+    requeteAjax.open("GET", "Models/model.php");
   
     // 2. Quand elle reçoit les données, il faut qu'elle les traite (en exploitant le JSON) et il faut qu'elle affiche ces données au format HTML
     requeteAjax.onload = function(){
@@ -18,9 +18,13 @@ function AfficheMessage(){
         `
       }).join('');
   
-      const messages = document.getElementById('chat_data');
-  
-      messages.innerHTML = requeteAjax;
+      const messages = document.getElementById('chat_box');
+      var contenuElt = document.createElement("div");
+        contenuElt.classList="col-6 col-md-6 col-lg-6";
+
+            messages.innerHTML = requeteAjax;
+      messages[1].style="margin-left:50%";
+      messages.append(contenuElt);
     }
   
     // 3. On envoie la requête

@@ -4,26 +4,27 @@
 <head>
     <meta charset="utf-8">
     <title>Salon prive</title>
+  
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/index.css" media="all" />
 </head>
 
-<body>
-<div class="container">
-            <div class="row">
-            <div class="input-group-append">
-                <span class="input-group-text"><a href="deconnexion.php">Deconnection</a></span>
-            </div>  
-            </div>
+<body style=" background-image: url(images/about-us.jpg);">
+<div class="container" >
+          <div class="row">
     <div id="container">
-        <div id="chat_box">
+        <div id="chat_box" style="padding:10px">
+        <div class="input-group-append">
+                
+                <button type="button" class="btn btn-info" style="margin-left:1000px">
+                    <a  href="deconnexion.php">Deconnection</a></button>
+            </div>  
         <?php foreach($result as $re ) {  ?>
             <div id="chat_data">
-           
-                 
-                 <span  ><?php echo $re['msg']; ?></span> 
-                 <span style="float:right;margin-right:-50"><?php echo $re['date']; ?></span> 
+           <?php echo $re['nom']; ?>
+                 <span  style="color:brown; margin-left:300px"><?php echo $re['msg']; ?></span> 
+                 <span style="float:right";><?php echo $re['date']; ?></span> 
                 </div> 
 
               <?php } ?>
@@ -35,7 +36,9 @@
                 <input type="text" class="input-group-text"  name="message" id="texte" placeholder="Entrez votre texte">
                   
                     <div class="input-group-append">
-                        <span class="form-control" id="valid">Envoyer</span>
+                        <span class="form-control" id="valid">Envoyer
+                           
+                        </span>
                     </div>
                    
                     

@@ -4,26 +4,24 @@
     border: 0;
 }
 
-body {
-    background: rgb(196, 16, 16);
-    
-}
+
 
 .btn{
     background-color: blue;
 
 }
 #container {
-    width: 40%;
+    width: 100%;
     background: white;
-    margin: 0 auto;
+    margin: 50px;
     padding: 20px;
+    height: 50%;
    
 }
 
 #chat_box {
     width: 90%;
-    height: 400px;
+    height: 500px;
 }
 
 #chat_data {
@@ -35,7 +33,7 @@ body {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 1000px;
     height: 40px;
     border: 1px solid grey;
     border-radius: 5px;
