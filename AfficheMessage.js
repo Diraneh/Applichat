@@ -1,7 +1,4 @@
-
-
-
-   function AfficheMessage(){
+function AfficheMessage(){
     // 1. Elle doit créer une requête AJAX pour se connecter au serveur, et notamment au fichier handler.php
     const requeteAjax = new XMLHttpRequest();
     
