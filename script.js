@@ -2,6 +2,7 @@
 document.getElementById("valid").addEventListener("click", function(e){
     e.preventDefault();
     ajoutMessage();
+  
 })
 
 //On crée la fonction ajourMessage
@@ -17,22 +18,26 @@ function ajoutMessage(){
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("reponse").innerHTML="Votre message a bien été ajouté"
             document.getElementById("texte").value = ""
+            
         }
         else{
             document.getElementById("reponse").innerHTML="Votre message n'a pas pu être ajouté" 
         }
        }
 
-    
+     //  var interval = window.setInterval(xmlhttp, 1000);
        //On ouvrir notre requête
        xmlhttp.open("POST", "views/ajoutMessage.php?message="+message);
        
 
        //on envoi la requête
        xmlhttp.send();
+       
 
    }
-  
+   
 
 
    }
+
+ 

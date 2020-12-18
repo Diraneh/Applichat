@@ -22,8 +22,8 @@
             <div id="chat_data">
            
                  
-                 <span  style="float:right;"><?php echo $re['msg']; ?></span> 
-                 <span style="float:right;"><?php echo $re['date']; ?></span> 
+                 <span  ><?php echo $re['msg']; ?></span> 
+                 <span style="float:right;margin-right:-50"><?php echo $re['date']; ?></span> 
                 </div> 
 
               <?php } ?>
@@ -44,6 +44,9 @@
                 <div id="reponse"></div>
             </div>
         <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="AfficheMessage.js"></script>
+        
+
         
        
     </div>
