@@ -1,5 +1,5 @@
 //on defini ce qui va se passer quand nous allons cliquer sur le bouton ayant l'id valid
-document.getElementById("valid").addEventListener("click", function(e){
+document.getElementById("valide").addEventListener("click", function(e){
     e.preventDefault();
     ajoutMessage();
   
@@ -7,7 +7,7 @@ document.getElementById("valid").addEventListener("click", function(e){
 
 //On crée la fonction ajourMessage
 function ajoutMessage(){
-   let message = document.getElementById("texte").value
+   let message = document.getElementById("textee").value
 
    
 
@@ -16,12 +16,12 @@ function ajoutMessage(){
        let xmlhttp = new XMLHttpRequest();
        xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("reponse").innerHTML="Votre message a bien été ajouté"
-            document.getElementById("texte").value = ""
+            document.getElementById("reponsee").innerHTML="Votre message a bien été ajouté"
+            document.getElementById("textee").value = ""
             
         }
         else{
-            document.getElementById("reponse").innerHTML="Votre message n'a pas pu être ajouté" 
+            document.getElementById("reponsee").innerHTML="Votre message n'a pas pu être ajouté" 
         }
        }
 

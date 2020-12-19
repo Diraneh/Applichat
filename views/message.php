@@ -35,17 +35,16 @@
       <div class="msg-bubble">
       <div class="msg-text">
         
-     
+      <?php foreach($result as $ree ) {  ?>
+            <div id="chat_datta">
+                    
+                    <span  style="color:brown; "><?php echo $ree['nom']; ?></span> 
+                 <span  style="color:brown; "><?php echo $ree['msg']; ?></span> 
+                 <span style="float:right";><?php echo $ree['date']; ?></span> 
+                </div> 
 
-                     
-<?php foreach($result as $re ) {  ?>
-    <div id="chat_data">
-   <?php echo $re['nom']; ?>
-         <span  style="color:brown; margin-left:300px"><?php echo $re['msg']; ?></span> 
-         <span style="float:right";><?php echo $re['date']; ?></span> 
-        </div> 
+              <?php } ?>
 
-      <?php } ?>
         </div>
       </div>
     </div>
@@ -64,24 +63,16 @@
 
 
 
+                     
+<?php foreach($question as $re ) {  ?>
+    <div id="chat_data">
+   <?php echo $re['nom']; ?>
+         <span  style="color:brown; margin-left:300px"><?php echo $re['msg']; ?></span> 
+         <span style="float:right";><?php echo $re['date']; ?></span> 
+        </div> 
 
-
-
-
-
-
-
-
-
-      <?php foreach($question as $ree ) {  ?>
-            <div id="chat_datta">
-                    
-                    <span  style="color:brown; "><?php echo $ree['nom']; ?></span> 
-                 <span  style="color:brown; "><?php echo $ree['msg']; ?></span> 
-                 <span style="float:right";><?php echo $ree['date']; ?></span> 
-                </div> 
-
-              <?php } ?>
+      <?php } ?>
+      
 <div class="msg-info">
  
 </div>

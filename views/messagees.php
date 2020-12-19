@@ -34,8 +34,8 @@
     
       <div class="msg-bubble">
       <div class="msg-text">
-        
-<?php foreach($results as $re ) {  ?>
+      <?php foreach($question as $re ) {  ?>    
+
     <div id="chat_data">
    <?php echo $re['nom']; ?>
          <span  style="color:brown; margin-left:300px"><?php echo $re['msg']; ?></span> 
@@ -65,7 +65,7 @@
 
 
 
-      <?php foreach($question as $ree ) {  ?>
+      <?php foreach($results as $ree ) {  ?>
             <div id="chat_datta">
                     
                     <span  style="color:brown; "><?php echo $ree['nom']; ?></span> 
@@ -91,11 +91,11 @@
 
   <form class="msger-inputarea">
   
-    <input type="text" class="msger-input" name="message" id="texte" placeholder="Entrez votre texte">
-    <button type="submit"  id="valid" class="msger-send-btn">Send</button>
+    <input type="text" class="msger-input" name="message" id="textee" placeholder="Entrez votre texte">
+    <button type="submit"  id="valide" class="msger-send-btn">Send</button>
   </form>
-  <div id="reponse"></div>
-  <script type="text/javascript" src="scriptt.js"></script>
+  <div id="reponsee"></div>
+  <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="AfficheMessagees.js"></script>
         <script type="text/javascript" src="AfficheMessage.js"></script>
 </section>
