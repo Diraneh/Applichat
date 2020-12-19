@@ -10,16 +10,20 @@
     <link rel="stylesheet" href="CSS/index.css" media="all" />
 </head>
 
-<body style="background-color:blue">
+<body>
     <section class="msger">
 
         <header class="msger-header">
-
+        <button type="button" class="btn btn-danger" style="color:white">
+                    <a href="deconnexion.php" style="color:white">Déconnexion</a></button>
+       
+         
             <div class="msger-header-title">
+            <center>
+                <h1 style="color:green" style="margin-left:-10px"> Applichat</h1>
+              </center>
 
-
-                <button type="button" class="btn btn-info" style="color:brown;margin-left:20%">
-                    <a href="deconnexion.php">Deconnection</a></button>
+               
             </div>
             <div class="msger-header-options">
                 <span><i class="fas fa-cog"></i></span>
@@ -78,12 +82,12 @@
         <form class="msger-inputarea">
 
             <input type="text" class="msger-input" name="message" id="texte" placeholder="Entrez votre texte">
-            <button type="submit" id="valid" class="msger-send-btn">Send</button>
+            <button type="submit" id="valid" class="msger-send-btn">Envoyer</button>
         </form>
         <div id="reponse"></div>
-        <script type="text/javascript" src="scriptt.js"></script>
-        <script type="text/javascript" src="AfficheMessagees.js"></script>
-        <script type="text/javascript" src="AfficheMessage.js"></script>
+        <script type="text/javascript" src="js/scriptt.js"></script>
+        <script type="text/javascript" src="js/AfficheMessagees.js"></script>
+        <script type="text/javascript" src="js/AfficheMessage.js"></script>
     </section>
 </body>
 
