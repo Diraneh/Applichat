@@ -31,17 +31,25 @@
        class="msg-img"
        style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
       ></div>
-
+    
       <div class="msg-bubble">
-          
-        <div class="msg-info">
-         
-        </div>
+      <div class="msg-text">
         
-                
-               
-          
-       
+<?php foreach($results as $re ) {  ?>
+    <div id="chat_data">
+   <?php echo $re['nom']; ?>
+         <span  style="color:brown; margin-left:300px"><?php echo $re['msg']; ?></span> 
+         <span style="float:right";><?php echo $re['date']; ?></span> 
+        </div> 
+
+      <?php } ?>
+
+
+
+
+
+      
+
         </div>
       </div>
     </div>
@@ -53,10 +61,11 @@
       ></div>
 
       <div class="msg-bubble">
-       
+      <div class="msg-text">
 
-        <div class="msg-text">
-        <?php foreach($question as $ree ) {  ?>
+
+
+      <?php foreach($question as $ree ) {  ?>
             <div id="chat_datta">
                     
                     <span  style="color:brown; "><?php echo $ree['nom']; ?></span> 
@@ -65,7 +74,17 @@
                 </div> 
 
               <?php } ?>
-        </div>
+<div class="msg-info">
+ 
+</div>
+
+        
+       
+  
+
+</div>
+
+       
       </div>
     </div>
   </main>
@@ -78,6 +97,7 @@
   <div id="reponse"></div>
   <script type="text/javascript" src="scriptt.js"></script>
         <script type="text/javascript" src="AfficheMessagees.js"></script>
+        <script type="text/javascript" src="AfficheMessage.js"></script>
 </section>
 </body>
 

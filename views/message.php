@@ -29,27 +29,23 @@
     <div class="msg left-msg">
       <div
        class="msg-img"
-       style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
+       style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"
       ></div>
-
+    
       <div class="msg-bubble">
-          
-      
+      <div class="msg-text">
         
-                
-               
-          
-        <div class="msg-text">
-        <?php foreach($result as $re ) {  ?>
-            <div id="chat_data">
-           <?php echo $re['nom']; ?>
-                 <span  style="color:brown; margin-left:300px"><?php echo $re['msg']; ?></span> 
-                 <span style="float:right";><?php echo $re['date']; ?></span> 
-                </div> 
+     
 
-              <?php } ?>
-                   
-        </div>
+                     
+<?php foreach($result as $re ) {  ?>
+    <div id="chat_data">
+   <?php echo $re['nom']; ?>
+         <span  style="color:brown; margin-left:300px"><?php echo $re['msg']; ?></span> 
+         <span style="float:right";><?php echo $re['date']; ?></span> 
+        </div> 
+
+      <?php } ?>
         </div>
       </div>
     </div>
@@ -57,18 +53,46 @@
     <div class="msg right-msg">
       <div
        class="msg-img"
-       style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"
+       style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
       ></div>
 
       <div class="msg-bubble">
-        <div class="msg-info">
-          <div class="msg-info-name">Sajad</div>
-          <div class="msg-info-time">12:46</div>
-        </div>
+      <div class="msg-text">
 
-        <div class="msg-text">
-      
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <?php foreach($question as $ree ) {  ?>
+            <div id="chat_datta">
+                    
+                    <span  style="color:brown; "><?php echo $ree['nom']; ?></span> 
+                 <span  style="color:brown; "><?php echo $ree['msg']; ?></span> 
+                 <span style="float:right";><?php echo $ree['date']; ?></span> 
+                </div> 
+
+              <?php } ?>
+<div class="msg-info">
+ 
+</div>
+
+        
+       
+  
+
+</div>
+
+       
       </div>
     </div>
   </main>
@@ -79,7 +103,8 @@
     <button type="submit"  id="valid" class="msger-send-btn">Send</button>
   </form>
   <div id="reponse"></div>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="scriptt.js"></script>
+        <script type="text/javascript" src="AfficheMessagees.js"></script>
         <script type="text/javascript" src="AfficheMessage.js"></script>
 </section>
 </body>
