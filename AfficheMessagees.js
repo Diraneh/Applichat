@@ -18,7 +18,7 @@ function AfficheMessage(){
         `
       }).join('');
   
-      const messages = document.getElementById('chat_data');
+      const messages = document.getElementById('chat_datta');
       var contenuElt = document.createElement("div");
         contenuElt.classList="col-6 col-md-6 col-lg-6";
 

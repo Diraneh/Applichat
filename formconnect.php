@@ -22,15 +22,14 @@ if ( isset($_GET['action']) && !empty($_GET['User'])  && !empty($_GET['Password'
   $row   = $Selection->fetch(PDO::FETCH_ASSOC);
   if($count == 1 && !empty($row)) {
     /******************** Your code ***********************/
-      if($USER="Elmi"){
-
+     
      
     header('location:index.php');
-    echo "Bonjour Elmi";
+  
   }
   } 
   
-}
+
   
 
 

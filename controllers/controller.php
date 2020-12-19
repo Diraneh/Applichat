@@ -15,3 +15,14 @@ function homeView(){
 
 
 
+
+function homeViews(){
+    $mgs= new messages();
+    $question = $mgs->reponser();
+
+
+ require('views/messagees.php');
+}
+
+
+

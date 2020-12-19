@@ -34,22 +34,14 @@
 
       <div class="msg-bubble">
           
-      
+        <div class="msg-info">
+         
+        </div>
         
                 
                
           
-        <div class="msg-text">
-        <?php foreach($result as $re ) {  ?>
-            <div id="chat_data">
-           <?php echo $re['nom']; ?>
-                 <span  style="color:brown; margin-left:300px"><?php echo $re['msg']; ?></span> 
-                 <span style="float:right";><?php echo $re['date']; ?></span> 
-                </div> 
-
-              <?php } ?>
-                   
-        </div>
+       
         </div>
       </div>
     </div>
@@ -61,13 +53,18 @@
       ></div>
 
       <div class="msg-bubble">
-        <div class="msg-info">
-          <div class="msg-info-name">Sajad</div>
-          <div class="msg-info-time">12:46</div>
-        </div>
+       
 
         <div class="msg-text">
-      
+        <?php foreach($question as $ree ) {  ?>
+            <div id="chat_datta">
+                    
+                    <span  style="color:brown; "><?php echo $ree['nom']; ?></span> 
+                 <span  style="color:brown; "><?php echo $ree['msg']; ?></span> 
+                 <span style="float:right";><?php echo $ree['date']; ?></span> 
+                </div> 
+
+              <?php } ?>
         </div>
       </div>
     </div>
@@ -79,8 +76,8 @@
     <button type="submit"  id="valid" class="msger-send-btn">Send</button>
   </form>
   <div id="reponse"></div>
-  <script type="text/javascript" src="script.js"></script>
-        <script type="text/javascript" src="AfficheMessage.js"></script>
+  <script type="text/javascript" src="scriptt.js"></script>
+        <script type="text/javascript" src="AfficheMessagees.js"></script>
 </section>
 </body>
 

@@ -12,6 +12,17 @@ public function message(){
     
 }
 
+
+public function reponser(){
+    
+  $results =$this->connect()->prepare("SELECT nom, msg, date FROM reponse ORDER by date ");
+  $results->execute(); 
+    $results = $results->fetchALL(PDO::FETCH_ASSOC); 
+    
+    return $results;
+    
+}
+
 }
 
 ?>
