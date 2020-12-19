@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3308
--- Généré le :  sam. 19 déc. 2020 à 10:56
+-- Généré le :  sam. 19 déc. 2020 à 12:57
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.3.12
 
@@ -32,18 +32,18 @@ DROP TABLE IF EXISTS `donne`;
 CREATE TABLE IF NOT EXISTS `donne` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `msg` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `nom` varchar(20) NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM AUTO_INCREMENT=121 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `donne`
 --
 
 INSERT INTO `donne` (`Id`, `msg`, `date`, `nom`) VALUES
-(83, 'oui et toi', '2020-12-18 11:38:23', 'Elmi'),
-(106, 'hkjhkl', '2020-12-19 09:02:30', 'Elmi');
+(83, 'oui ', '2020-12-19 10:38:23', 'Elmi'),
+(127, 'yo', '2020-12-19 12:48:57', '');
 
 -- --------------------------------------------------------
 
@@ -80,25 +80,15 @@ CREATE TABLE IF NOT EXISTS `reponse` (
   `msg` varchar(255) NOT NULL,
   `nom` varchar(20) NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `reponse`
 --
 
 INSERT INTO `reponse` (`Id`, `date`, `msg`, `nom`) VALUES
-(1, '2020-12-18 14:59:17', 'Salut ', 'Baptiste'),
-(2, '2020-12-19 08:05:26', 'oui', 'Baptiste'),
-(35, '2020-12-19 10:55:05', 'ssqds', ''),
-(34, '2020-12-19 10:54:33', 'qsqsds', ''),
-(33, '2020-12-19 10:53:27', 'sddsf', ''),
-(32, '2020-12-19 10:53:06', 'sfsdf', ''),
-(31, '2020-12-19 10:52:36', 'sdff', ''),
-(30, '2020-12-19 10:51:12', 'dfdfd', ''),
-(29, '2020-12-19 10:50:26', 'dsfdsf', ''),
-(28, '2020-12-19 10:49:58', 'sdfdsf', ''),
-(27, '2020-12-19 10:48:36', 'dsfdf', ''),
-(26, '2020-12-19 10:47:13', 'Bonjour', 'Baptiste');
+(1, '2020-12-19 14:59:17', '', 'Lea'),
+(49, '2020-12-19 12:49:59', 'K9', '');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
