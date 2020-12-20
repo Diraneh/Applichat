@@ -1,5 +1,13 @@
 # Applichat
+
+
+ | Version | Supported          |
+| ------- | ------------------ |
+| 1.0.x   | :All navigation    |
+| 1.1.x   | : curenty develop  | 
+
 un système de communication en temps réel pour entreprise de type messenger.
+
 
 
 Réalisation d'un chat en Ajax
